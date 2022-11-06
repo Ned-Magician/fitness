@@ -1,0 +1,109 @@
+@use "../custom" as *;
+
+.hero-content-font {
+  align-items: center;
+  font-family: "Nunito";
+  font-style: normal;
+  position: absolute;
+  top: 374px;
+  color: $primary;
+  width: 778px;
+  left: 97px;
+  @media (max-width: 991.98px) {
+    width: 416px;
+    left: 82px;
+  }
+  @media (max-width: 575.98px) {
+    width: 250px;
+    left: 34px;
+    top: 300px;
+  }
+  &--intro {
+    font: {
+      weight: 800;
+      size: 96px;
+    }
+    line-height: 131px;
+    text-transform: uppercase;
+    @media (max-width: 991.98px) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 44px;
+      line-height: 4rem;
+    }
+  }
+  &--description {
+    font: {
+      weight: 500;
+      size: 32px;
+    }
+    line-height: 44px;
+    @media (max-width: 575.98px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}
+
+// <<--------------------- //NAVE FONT STYLES RESPONSIVE// -------------------->>
+.nav-font-Style {
+  color: $primary;
+  padding: 7px 0px;
+  margin: 0px 8px;
+  min-width: 140px;
+  font: {
+    family: "MuseoModerno", cursive;
+    weight: 900;
+    font-size: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    color: $primary;
+    min-width: 153px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font: {
+      family: "MuseoModerno", cursive;
+      weight: 900;
+      font-size: 25px;
+    }
+  }
+}
+
+// <<--------------------- //FIGERCAPTION STYLE// -------------------->>
+.titles {
+  font: {
+    family: "Nunito";
+    weight: bold;
+    size: 36px;
+  }
+  font-style: normal;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 0 1px #fff, 0 1px 2px rgba(206, 206, 206, 0.3);
+}
+// <<--------------------- //FONTS IN LARG AND SMALL BREACKPOINT// -------------------->>
+.font-sm-small {
+  @include media-breakpoint-down(sm) {
+    font-size: small !important;
+  }
+}
+.font-sm-smaller {
+  @include media-breakpoint-down(sm) {
+    font-size: smaller !important;
+  }
+}
+.font-lg-small {
+  @include media-breakpoint-down(lg) {
+    font-size: small !important;
+  }
+}
+.font-lg-smaller {
+  @include media-breakpoint-down(lg) {
+    font-size: smaller !important;
+  }
+}

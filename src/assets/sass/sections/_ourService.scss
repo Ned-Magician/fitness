@@ -1,0 +1,178 @@
+@use "../custom" as *;
+@use "../componants/mixin" as *;
+@use "../componants/typography" as *;
+section#our-service {
+  @include flex;
+  background-color: $primary-black;
+  margin: 0 -0.75rem;
+  overflow: hidden;
+  .container-fluid {
+    .row {
+      // INTRODUCTION SECTION
+      div.col-md-6 {
+        .display-2 {
+          @extend .titles;
+          &--intro {
+            font-size: larger;
+            margin: 64px 0;
+            line-height: 5rem;
+          }
+
+          &--description {
+            display: block;
+            font-size: 40px;
+            font-weight: normal;
+            line-height: 4rem;
+            margin: 42px;
+            @include media-breakpoint-down(lg) {
+              font-size: 36px;
+              line-height: 3.5rem;
+            }
+          }
+        }
+        #checkboxes {
+          margin: 20% 0 0 10%;
+          .checkbox {
+            @extend .titles;
+            cursor: pointer;
+            display: block;
+
+            line-height: 6rem;
+            @include media-breakpoint-down(lg) {
+              font-size: 32px;
+              line-height: 45px;
+            }
+            // PICTIRE OF CHECK BOXES WITH TICKE AND THIER ANIMATIONS
+            svg {
+              margin-right: 18px;
+              overflow: unset;
+              rect {
+                @keyframes boxAimationReact {
+                  from {
+                    fill: #d2f898;
+                  }
+                  to {
+                    fill: #ffffff;
+                  }
+                }
+              }
+
+              path {
+                @keyframes boxAimationPath {
+                  from {
+                    fill: black;
+                  }
+                  to {
+                    transform: scale(1.5) translate(-7px, -6px);
+                    fill: #e91e63;
+                  }
+                }
+              }
+            }
+            &:hover svg > rect {
+              animation: boxAimationReact 0.5s ease-in;
+            }
+            &:hover svg > path {
+              animation: boxAimationPath 0.35s ease-in 2;
+            }
+          }
+        }
+      }
+      //  OUR SERVICE PICTURE
+      div.col-md-6.our-service-pic {
+        position: relative;
+        margin-top: 10px;
+
+        &::after {
+          content: "";
+          width: 108%;
+          position: absolute;
+          height: 100%;
+          background: radial-gradient(
+            47.05% 59.05% at 54% 59%,
+            rgb(210 248 152 / 0%) 72.12%,
+            #020101 100%
+          );
+          top: 0;
+          right: -8%;
+        }
+      }
+
+      // OUR SERVICE BUTTONS
+      .service-buttons {
+        @include media-breakpoint-down(md) {
+          display: flex;
+          justify-content: center;
+          display: flex;
+          margin: 0 10px;
+          scale: 50%;
+        }
+        display: flex;
+        margin: 4rem 0.8rem;
+        justify-content: space-around;
+
+        // OUR SERVICE BUTTON SECTION
+
+        figure {
+          @include media-breakpoint-down(lg) {
+            margin: 0 20px;
+            scale: 75%;
+          }
+          margin-top: 20px;
+          width: min-content;
+          &:hover img {
+            animation: rotate 1s linear;
+          }
+          &:hover span::before {
+            animation: rotate 1s linear;
+          }
+          &:hover figcaption {
+            color: greenyellow;
+            text-shadow: 0px 0px 1px #fff, 0 1px 2px rgb(206 206 206 / 30%);
+          }
+          &:hover figcaption::before {
+            padding-bottom: 0;
+            animation: border-descript 1s linear;
+            border-radius: 0 5px 5px 0;
+            border-top: 5px solid rgba(255, 255, 255, 0.5);
+          }
+
+          // THE ROUND PICTURES OF BUTTONS INFO
+
+          span {
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              transform: scale(1, 9.6);
+              box-shadow: inset 0 0 4px 4px rgb(159 110 93 / 16%),
+                inset 0 0 7px 1px rgb(109 180 0 / 48%),
+                0 1px 2px 0 rgb(0 0 0 / 56%);
+              top: 0px;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+          // DISCRIPTION UNDER BUTTONS INFO
+
+          figcaption {
+            @extend .titles;
+            font-size: 28px;
+            margin-top: 20px;
+            transition: text-shadow 0.5s, color 0.5s ease-in;
+            text-transform: uppercase;
+            &::before {
+              content: "";
+              border-top: 1px solid rgba(255, 255, 255, 0.5);
+              display: block;
+              padding-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@use "../custom" as *;
+@use "../componants/mixin" as *;
+
+#footer {
+  @include flex;
+  @include bg-sections-style;
+  padding-top: 10rem;
+  .social-contact {
+    line-height: 4rem;
+    background: dimgrey;
+    // padding: 0 4rem;
+    .footer-social-icons {
+      @include flex;
+      font-size: 16px;
+      color: $primary;
+      text-align: center;
+      cursor: pointer;
+      transition: color 0.5s linear, box-shadow 0.5s linear,
+        background-color 0.5s linear;
+      &:hover {
+        color: $secondary;
+        font-weight: 900;
+        box-shadow: inset 0 0 3px 1px $secondary;
+        background-color: $primary-black;
+      }
+    }
+  }
+
+  .contact-content {
+    text-align: center;
+    .contact-footer {
+      color: $primary;
+      padding-top: 3rem;
+      @include flex;
+      flex-direction: column;
+      h3 {
+        border-bottom: 1px solid white;
+        padding: 1rem;
+      }
+      p {
+        cursor: pointer;
+        padding: 10px;
+        transition: background-color 0.5s linear;
+        &:hover {
+          font-weight: 900;
+          background-color: grey;
+        }
+      }
+    }
+  }
+  .copy-right {
+    border-top: 1px solid;
+  }
+}

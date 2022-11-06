@@ -1,0 +1,8 @@
+@use "../custom" as *;
+@use "../componants/mixin" as *;
+#main-page {
+  position: relative;
+  font-family: "MuseoModerno", cursive;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+}
