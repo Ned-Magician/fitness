@@ -5,7 +5,11 @@
 
 - This is a professional code design.
 - It's beautiful in terms of UX and makes the code compile easily.
+---
+_Screenshots:_
 
-_Screenshots_
-
-![Fitness-Pics]()
+![Fitness-Pics](https://github.com/Ned-Magician/fitness/blob/main/Fitness/1.JPG)
+![Fitness-Pics](https://github.com/Ned-Magician/fitness/blob/main/Fitness/2.JPG)
+![Fitness-Pics](https://github.com/Ned-Magician/fitness/blob/main/Fitness/3.JPG)
+![Fitness-Pics](https://github.com/Ned-Magician/fitness/blob/main/Fitness/4.JPG)
+![Fitness-Pics](https://github.com/Ned-Magician/fitness/blob/main/Fitness/5.JPG)
