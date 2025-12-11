@@ -5,7 +5,6 @@
   "main": "gulpFile.js",
   "dependencies": {
     "bootstrap-icons": "^1.9.1"
-    // ... keep all other dependencies as is
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
