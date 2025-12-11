@@ -1,5 +1,5 @@
 {
   "redirects": [
-    { "source": "/", "destination": "/src/fiitness.html", "permanent": true }
+    { "source": "/", "destination": "/index.html", "permanent": true }
   ]
 }
