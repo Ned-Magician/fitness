@@ -4,377 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fitness club</title>
+    <title>Fitness Club</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!--build:css css/styles.min.css-->
-    <link rel="stylesheet" href="../dist/css/style.css">
-    <!--endbuild-->
-    <!-- font Start-->
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@1,900&family=Nunito:ital,wght@0,500;0,800;0,900;1,500&display=swap" rel="stylesheet">
-    <!-- font Awesome End-->
   </head>
   <body>
     <div class="container-fluid min-vh-100" id="main-page">
-      <!-- //-------------    HERO PAGE SECTION START --------------  // -->
-      <section id="heroPage" >
-         <!-- // NAVBAR SECTION'S START // -->
-        <nav class="navbar navbar-expand-lg navbar-dark"  id="nav">
+
+      <!-- HERO SECTION -->
+      <section id="heroPage">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
           <div class="container-fluid">
             <a class="navbar-brand flex-column" href="#">
-              <img  src="../dist/images/Frame 6.png" alt="">
-              <img  src="../dist/images/Logo.png" alt="">
+              <img src="images/Frame 6.png" alt="">
+              <img src="images/Logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navContent">
               <ul class="navbar-nav mb-2 mb-lg-0 align-items-end" id="nav-animation">
-                <li class="nav-item">
-                  <a class="nav-link btn active" data-my-animation="my-animations" aria-current="page" href="#hero-section">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn" data-my-animation="my-animations" aria-current="page" href="#choose-type">Our service</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn" data-my-animation="my-animations" href="#meet-our-team">Our team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn" data-my-animation="my-animations" href="#FAQ">Contacts</a>
-                </li>
+                <li class="nav-item"><a class="nav-link btn active" href="#hero-section">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn" href="#our-service">Our service</a></li>
+                <li class="nav-item"><a class="nav-link btn" href="#meet-our-team">Our team</a></li>
+                <li class="nav-item"><a class="nav-link btn" href="#FAQ">Contacts</a></li>
+              </ul>
             </div>
           </div>
         </nav>
-         <!-- //  HERO CONTENT //-->
-      <div id="hero-section" class="intro-section">
-        <div class="container">
-         <!-- // HERO IMAGE // -->
-           <div class="bg-hero">
-            <!-- <span class="effect"></span> -->
-            <span class="img-of-hero"></span>
-            <!-- <span class="left-effect"></span> -->
-           </div>
-         <!-- // INTRO OF HERO PAGE // -->
-        <span class="hero-content-font">
-          <p class="hero-content-font--intro">TIME TO shape YOURSELF</p>
-          <p class="hero-content-font--description">Build your desired body with our fitness club.</p>
-        </span>
-          <!-- // BUTTON // -->
-          <div class="button bg-gradient"  type="button">Join now</div>
-        </div>
-      </div>
-      </section>
-      <!-- //-------------    HERO PAGE SECTION END ---------------   // -->
-             <!-- wave-between-sections -->
-             <img class="border-between-layers" src="../dist/images/wave-between-sections.svg" alt="">
-            <!-- wave-between-sections -->
 
-      <!-- //-------------    OUR SERVICE SECTION START -----------   // -->
+        <div id="hero-section" class="intro-section">
+          <div class="container">
+            <div class="bg-hero">
+              <span class="img-of-hero"></span>
+            </div>
+            <span class="hero-content-font">
+              <p class="hero-content-font--intro">TIME TO shape YOURSELF</p>
+              <p class="hero-content-font--description">Build your desired body with our fitness club.</p>
+            </span>
+            <div class="button bg-gradient" type="button">Join now</div>
+          </div>
+        </div>
+      </section>
+
+      <img class="border-between-layers" src="images/wave-between-sections.svg" alt="">
+
+      <!-- OUR SERVICE SECTION -->
       <section id="our-service">
         <div class="container-fluid">
           <div class="row w-100">
             <div class="col-md-6 col-sm-12">
               <h1 class="display-2">
                 <span class="display-2--intro">Our service <span class="heading-line"></span></span>
-                <span class="display-2--description">
-                  We provide a wide variety of services. 
-                  Everyone can find a relevant option.
-                </span>
-              
+                <span class="display-2--description">We provide a wide variety of services. Everyone can find a relevant option.</span>
               </h1>
-              <div id="checkboxes" class="d-flex align-items-start justify-content-center  flex-column ">
-                <span class="checkbox"><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" transform="translate(0 0.5)" fill="#D2F898"/>
-                  <path d="M21.94 10.44C22.2217 10.1718 22.5967 10.0235 22.9856 10.0264C23.3746 10.0294 23.7473 10.1833 24.0249 10.4557C24.3025 10.7282 24.4635 11.0979 24.4738 11.4867C24.4841 11.8756 24.3429 12.2532 24.08 12.54L16.1 22.52C15.9628 22.6678 15.7972 22.7864 15.6131 22.8687C15.429 22.951 15.2302 22.9954 15.0285 22.9991C14.8269 23.0029 14.6266 22.9659 14.4395 22.8904C14.2525 22.815 14.0826 22.7026 13.94 22.56L8.64801 17.268C8.50064 17.1306 8.38243 16.965 8.30045 16.781C8.21846 16.5971 8.17438 16.3984 8.17083 16.197C8.16727 15.9956 8.20432 15.7956 8.27976 15.6088C8.35521 15.422 8.4675 15.2523 8.60993 15.1099C8.75237 14.9675 8.92204 14.8552 9.10881 14.7797C9.29559 14.7043 9.49565 14.6672 9.69706 14.6708C9.89846 14.6743 10.0971 14.7184 10.2811 14.8004C10.4651 14.8824 10.6307 15.0006 10.768 15.148L14.956 19.334L21.902 10.484C21.9145 10.4686 21.9279 10.4539 21.942 10.44H21.94Z" fill="black"/>
-                </svg>Zumba</span>
-                <span class="checkbox"><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" transform="translate(0 0.5)" fill="#D2F898"/>
-                    <path d="M21.94 10.44C22.2217 10.1718 22.5967 10.0235 22.9856 10.0264C23.3746 10.0294 23.7473 10.1833 24.0249 10.4557C24.3025 10.7282 24.4635 11.0979 24.4738 11.4867C24.4841 11.8756 24.3429 12.2532 24.08 12.54L16.1 22.52C15.9628 22.6678 15.7972 22.7864 15.6131 22.8687C15.429 22.951 15.2302 22.9954 15.0285 22.9991C14.8269 23.0029 14.6266 22.9659 14.4395 22.8904C14.2525 22.815 14.0826 22.7026 13.94 22.56L8.64801 17.268C8.50064 17.1306 8.38243 16.965 8.30045 16.781C8.21846 16.5971 8.17438 16.3984 8.17083 16.197C8.16727 15.9956 8.20432 15.7956 8.27976 15.6088C8.35521 15.422 8.4675 15.2523 8.60993 15.1099C8.75237 14.9675 8.92204 14.8552 9.10881 14.7797C9.29559 14.7043 9.49565 14.6672 9.69706 14.6708C9.89846 14.6743 10.0971 14.7184 10.2811 14.8004C10.4651 14.8824 10.6307 15.0006 10.768 15.148L14.956 19.334L21.902 10.484C21.9145 10.4686 21.9279 10.4539 21.942 10.44H21.94Z" fill="black"/>
-                </svg>Pilates</span>
-                <span class="checkbox"><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" transform="translate(0 0.5)" fill="#D2F898"/>
-                    <path d="M21.94 10.44C22.2217 10.1718 22.5967 10.0235 22.9856 10.0264C23.3746 10.0294 23.7473 10.1833 24.0249 10.4557C24.3025 10.7282 24.4635 11.0979 24.4738 11.4867C24.4841 11.8756 24.3429 12.2532 24.08 12.54L16.1 22.52C15.9628 22.6678 15.7972 22.7864 15.6131 22.8687C15.429 22.951 15.2302 22.9954 15.0285 22.9991C14.8269 23.0029 14.6266 22.9659 14.4395 22.8904C14.2525 22.815 14.0826 22.7026 13.94 22.56L8.64801 17.268C8.50064 17.1306 8.38243 16.965 8.30045 16.781C8.21846 16.5971 8.17438 16.3984 8.17083 16.197C8.16727 15.9956 8.20432 15.7956 8.27976 15.6088C8.35521 15.422 8.4675 15.2523 8.60993 15.1099C8.75237 14.9675 8.92204 14.8552 9.10881 14.7797C9.29559 14.7043 9.49565 14.6672 9.69706 14.6708C9.89846 14.6743 10.0971 14.7184 10.2811 14.8004C10.4651 14.8824 10.6307 15.0006 10.768 15.148L14.956 19.334L21.902 10.484C21.9145 10.4686 21.9279 10.4539 21.942 10.44H21.94Z" fill="black"/>
-                </svg>Fitness</span>
-                <span class="checkbox"><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" transform="translate(0 0.5)" fill="#D2F898"/>
-                    <path d="M21.94 10.44C22.2217 10.1718 22.5967 10.0235 22.9856 10.0264C23.3746 10.0294 23.7473 10.1833 24.0249 10.4557C24.3025 10.7282 24.4635 11.0979 24.4738 11.4867C24.4841 11.8756 24.3429 12.2532 24.08 12.54L16.1 22.52C15.9628 22.6678 15.7972 22.7864 15.6131 22.8687C15.429 22.951 15.2302 22.9954 15.0285 22.9991C14.8269 23.0029 14.6266 22.9659 14.4395 22.8904C14.2525 22.815 14.0826 22.7026 13.94 22.56L8.64801 17.268C8.50064 17.1306 8.38243 16.965 8.30045 16.781C8.21846 16.5971 8.17438 16.3984 8.17083 16.197C8.16727 15.9956 8.20432 15.7956 8.27976 15.6088C8.35521 15.422 8.4675 15.2523 8.60993 15.1099C8.75237 14.9675 8.92204 14.8552 9.10881 14.7797C9.29559 14.7043 9.49565 14.6672 9.69706 14.6708C9.89846 14.6743 10.0971 14.7184 10.2811 14.8004C10.4651 14.8824 10.6307 15.0006 10.768 15.148L14.956 19.334L21.902 10.484C21.9145 10.4686 21.9279 10.4539 21.942 10.44H21.94Z" fill="black"/>
-                </svg>Jazzercise</span>
+
+              <div id="checkboxes" class="d-flex align-items-start justify-content-center flex-column">
+                <span class="checkbox"><img src="images/Fitness our-servis-buttom-1.svg" alt=""> Zumba</span>
+                <span class="checkbox"><img src="images/Fitness our-servis-buttom-2.svg" alt=""> Pilates</span>
+                <span class="checkbox"><img src="images/Fitness our-servis-buttom-3.svg" alt=""> Fitness</span>
+                <span class="checkbox"><img src="images/Vector 1.png" alt=""> Jazzercise</span>
               </div>
-             </div>
-            <div class="col-md-6 col-sm-12 our-service-pic">
-            <img src="../dist/images/Vector 1.png" alt="">
             </div>
-            <div class="service-buttons" type="button">
-              <figure class="anime-info-button"> 
-            <span>
-             <img src="../dist/images/Fitness our-servis-buttom-1.svg" alt="">
-            </span>
-                <figcaption>motivating coaches</figcaption>
-               </figure>
-              <figure class="anime-info-button">
-            <span><img src="../dist/images/Fitness our-servis-buttom-2.svg" alt=""></span>
-                <figcaption class="align-content-center">gyms around the country</figcaption>
-                </figure>
-              <figure class="anime-info-button"> 
-       <span>
-        <img src="../dist/images/Fitness our-servis-buttom-3.svg" alt="">
-       </span>
-                <figcaption> happy clients</figcaption>
-                 </figure>
+
+            <div class="col-md-6 col-sm-12 our-service-pic">
+              <img src="images/Vector 1.png" alt="">
+            </div>
           </div>
-      </div>
+        </div>
       </section>
 
-      <!-- //-------------    OUR SERVICE SECTION END -------------   // -->
-      <!-- //-------------    TYPE SECTION START -------------   // -->
+      <!-- CHOOSE TYPE SECTION -->
       <section id="choose-type">
-  <div class="container-fluid">
-    <h1 class="favourite-type text-center text-uppercase pb-2">
-      Choose your type <span class="heading-line"></span>
-    </h1>
-  <div class="container">
-    <div class="row">
-      <!--START BUTTONS FOR SELECT THE OPTIONS -->
-      <div class="btn-group " id="type-option" role="group" aria-label="First group" >
-        <button type="button" class="btn btn-outline-secondary">Group training</button>
-        <button type="button" class="btn btn-outline-secondary">Mix the types</button>
-        <button type="button" class="btn btn-outline-secondary">Make own plan</button>
-        <button type="button" class="btn btn-outline-secondary">Personal training</button>
-      </div>
-      <!--END BUTTONS FOR SELECT THE OPTIONS -->
-      <!--START PICTURE STYLE FOR TYPES  -->
-      <div class="col-md-6 col-sm-12">
-        <div class="portfolio-box">
-          <img class="img-fluid" src="../dist/images/portfolio-1.png" alt="portfolio-">
-          <div class="portfolio-info">
-            <div class="portfolio-caption">
-              <h4>Personal training</h4>
+        <div class="container-fluid">
+          <h1 class="favourite-type text-center text-uppercase pb-2">Choose your type <span class="heading-line"></span></h1>
+          <div class="container">
+            <div class="row">
+              <div class="btn-group" id="type-option" role="group">
+                <button type="button" class="btn btn-outline-secondary">Group training</button>
+                <button type="button" class="btn btn-outline-secondary">Mix the types</button>
+                <button type="button" class="btn btn-outline-secondary">Make own plan</button>
+                <button type="button" class="btn btn-outline-secondary">Personal training</button>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="portfolio-box">
+                  <img class="img-fluid" src="images/portfolio-1.png" alt="portfolio">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="portfolio-box">
+                  <img class="img-fluid" src="images/portfolio-2.png" alt="portfolio">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="portfolio-box">
-          <img class="img-fluid" src="../dist/images/portfolio-2.png" alt="portfolio-">
-         
-          <div class="portfolio-info">
-            <div class="portfolio-caption">
-              <h4>Group training</h4>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="portfolio-box">
-          <img class="img-fluid" src="../dist/images/portfolio-3.png" alt="portfolio-">
-          <div class="portfolio-info">
-            <div class="portfolio-caption">
-              <h4>Maybe mixing types</h4>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="portfolio-box">
-          <img class="img-fluid" src="../dist/images/portfolio-2.png" alt="portfolio-">
-          <div class="portfolio-info">
-            <div class="portfolio-caption">
-              <h4>Maybe you want your arrange your own plan</h4>
-          </div>
-        </div>
-        </div>
-      </div>
-       <!--END PICTURE STYLE FOR TYPES  -->
-        <!--START BUTTON JOIN STYLE FOR TYPES  -->
-        <div class="col-12 my-5">
-          <div class="button bg-gradient "  type="button">Join now</div></div>
-        
-         <!--END BUTTON JOIN STYLE FOR TYPES  -->
-      </div>
-  </div>
-  </div>
       </section>
-      <!-- //-------------    TYPE SECTION END -----------   // -->
-      <!-- //-------------     OUR TEAM SECTION START -------------   // -->
+
+      <!-- OUR TEAM SECTION -->
       <section id="meet-our-team">
         <div class="container-fluid">
-          <h1 class="">Meet our team<span class="heading-line"></span></h1>
-     <div class="container">
-       <!-- CHECK BOXES FOR VERIFY -->
-      <div class="row" id="checkBoxOurTeam">
-        <span class="col-3 check-boxes-verify"><img src="../dist/images/bi_check for team.svg" alt="">Certified</span>
-        <span class="col-3 check-boxes-verify"><img src="../dist/images/bi_check for team.svg" alt="">Qualified</span>
-        <span class="col-3 check-boxes-verify"><img src="../dist/images/bi_check for team.svg" alt="">Experienced</span>
-      </div>
-      <!-- CHECK BOXES FOR VERIFY -->
-        <!-- CARDS start-->
-        <ul class="row" id="cards-slider">
-        <!-- slide-1 -->
-        <li class="card-hover col-sm-12 col-md-4 col-lg-3 hovering1">
-          <div class="card">
-            <img src="../dist/images/meet team.png" class="card-img-top" alt="Our Johanna Black, London teacher">
-            <div class="card-body">
-              <p class="card-text">
-                <q> I&rsquo;ll help you to get fit in no time </q>
-                Johanna Black, London</p>
+          <h1>Meet our team <span class="heading-line"></span></h1>
+          <div class="container">
+            <div class="row" id="checkBoxOurTeam">
+              <span class="col-3 check-boxes-verify"><img src="images/bi_check for team.svg" alt=""> Certified</span>
+              <span class="col-3 check-boxes-verify"><img src="images/bi_check for team.svg" alt=""> Qualified</span>
+              <span class="col-3 check-boxes-verify"><img src="images/bi_check for team.svg" alt=""> Experienced</span>
             </div>
-          </div> 
-        </li>
-        <!-- slide-2 -->
-        <li class="card-hover col-sm-12 col-md-4 col-lg-3 hovering2" >
-        <div class="card" >
-            <img src="../dist/images/meet team.png" class="card-img-top" alt="Our Johanna Black, London teacher">
-            <div class="card-body">
-              <p class="card-text">
-                <q> I&rsquo;ll help you to get fit in no time </q>
-                Johanna Black, London</p>
-            </div>
-          </div> 
-        </li>
-        <!-- slide-3 -->
-        <li class="card-hover col-sm-12 col-md-4 col-lg-3 hovering3">
-        <div class="card" >
-            <img src="../dist/images/meet team.png" class="card-img-top" alt="Our Johanna Black, London teacher">
-            <div class="card-body">
-              <p class="card-text">
-                <q> I&rsquo;ll help you to get fit in no time </q>
-                Johanna Black, London</p>
-            </div>
-         
-        </div>
-      </li>      
-        </ul>
-        <!-- CARDS end-->
-     </div>
+            <ul class="row" id="cards-slider">
+              <li class="card-hover col-sm-12 col-md-4 col-lg-3">
+                <div class="card">
+                  <img src="images/meet team.png" class="card-img-top" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <!-- //-------------     OUR TEAM SECTION END -------------   // -->
-      <!-- //-------------    FAQ SECTION START -------------   // -->
+
+      <!-- FAQ SECTION -->
       <section id="FAQ">
-      <div class="container">
-       <div class="row text-center">
-        <h1 class="display-3 fw-bold text-uppercase my-3 text-light">faq<span class="heading-line"></span></h1>
-         <div class="heading-title"></div>
-              <p class="lead text-light">frequently asked questions, get knowledge before hand</p>
+        <div class="container">
+          <h1 class="display-3 fw-bold text-uppercase my-3 text-light">FAQ <span class="heading-line"></span></h1>
+          <p class="lead text-light">Frequently asked questions, get knowledge beforehand</p>
         </div>
-    <!-- ACCORDION CONTENT -->
-    <div class="row mt-5">
-      <div class="col-sm-12 col-md-8">
-        <div class="accordion mx-1" id="accordionExample">
-     <!-- ACCORDION ITEM 1 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What are the main feature?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, atque? Numquam sunt perferendis maxime placeat! Deleniti quo nisi unde tempore quod. Reprehenderit quidem temporibus dolore culpa saepe deleniti velit sunt.
-              </div>
-            </div>
-          </div>
-     <!-- ACCORDION ITEM 2 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               How can i start?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti recusandae facere, veniam mollitia sequi.
-               </div>
-            </div>
-          </div>
-     <!-- ACCORDION ITEM 3 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                How can get some consultation?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat vitae architecto, sit soluta rem.
-              </div>
-            </div>
-          </div>
-     <!-- ACCORDION ITEM 4 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                What's the most trent activity?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, placeat cum corporis porro, minus accusamus voluptatum quam hic nulla eligendi corrupti quidem veniam reprehenderit eius.
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contact-button" class="col-sm-12 col-md-4 text-center flex-column">
-        <h1 class="fw-bold text-uppercase fs-6 text-light mb-3">
-          Share your email address with us and our support team will provide you with all the details
-        </h1>
-        <div class="input-group input-group-sm mb-3 w-75">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
-          <input id="input-of-email" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <button class="button bg-gradient" type="button">Submit</button>
-      </div>
-    </div>
-  </div>
       </section>
-      <!-- //-------------    FAQ SECTION END -------------   // -->
-      <!-- //-------------    FOOTER SECTION START -------------   // -->
+
+      <!-- FOOTER -->
       <footer id="footer">
         <div class="container-fluid">
-          <div class="row social-contact px-lg-5">
-            <div class="col-md-3 footer-social-icons lh-sm"><i class="bi bi-headset fs-3 pe-2 "></i>Phone: +1 111122221</div>
-            <div class="col-md-3 footer-social-icons"><i class="bi bi-instagram  fs-3 pe-2"></i>Instagram</div>
-            <div class="col-md-3 footer-social-icons"><i class="bi bi-twitter  fs-3 pe-2"></i>Twitter</div>
-            <div class="col-md-3 footer-social-icons"><i class="bi bi-facebook  fs-3 pe-2"></i>Facebook</div>
-          </div>
-          <div class="row contact-content">
-            <div class="contact-footer col-md-4">
-              <h3>Our gyms</h3>
-              <p>Gyms near me</p>
-              <p>Gyms in London</p>
-              <p>Personal trainers</p>
-          </div>
-            <div class="contact-footer col-md-4">
-              <h3>Membership</h3>
-             <p>Student membership</p>
-             <p>Corporate membership</p>
-          </div>
-            <div class="contact-footer col-md-4">
-              <h3>Terms&Conditions </h3>
-             <p>Privacy policy</p>
-             <p>Gym rules</p>
-           </div>
-          </div>
           <p class="copy-right lead text-center">Copyright &copy; 2022 Fitness</p>
-          <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
         </div>
       </footer>
-      <!-- //-------------    FOOTER SECTION END -------------   // -->
-   
-    <!-- NAVBAR SECTION'S END -->
-    <!--build:js js/main.min.js -->
 
-    <script src="assets/js/style.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"></script>
-    <!--endbuild-->
+      <!-- JS -->
+      <script src="js/style.js"></script>
+      <script src="js/animation.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+    </div>
   </body>
 </html>
