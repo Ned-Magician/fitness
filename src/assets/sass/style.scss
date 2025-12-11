@@ -1,0 +1,15 @@
+@use "custom";
+//IMPORT THE COMPONENETS
+@use "componants/button";
+@use "componants/mixin";
+@use "componants/reset";
+@use "componants/typography";
+@use "componants/animation";
+//IMPORT THE SECTIONS
+@use "sections/mainPage";
+@use "sections/heroPage";
+@use "sections/ourService";
+@use "sections/chooseType";
+@use "sections/our-team";
+@use "sections/faq";
+@use "sections/footer";

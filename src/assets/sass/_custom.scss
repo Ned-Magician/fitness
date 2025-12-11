@@ -1,0 +1,65 @@
+//IMPORT BOOTSTRAP
+// theme Color Variables
+$white: #fff;
+$green: #d2f898;
+$black: #020101;
+$secondary: $green;
+$primary: $white;
+$primary-black: $black;
+$bg-button-accordion: #c16b6b;
+
+// ------------  start BORDER LINE UNDER THE TITLES  ----------
+.heading-line {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+  }
+  &::before {
+    width: 35%;
+    height: 0.1rem;
+    margin-top: 1.5rem;
+  }
+  &::after {
+    width: 10%;
+    height: 0.2rem;
+    border-radius: 0 0 30% 30%;
+  }
+}
+// ------------  END BORDER LINE UNDER THE TITLES  ----------
+.border-between-layers {
+  background-image: url(../../../dist/images/wavebetween-sections.svg);
+  width: 114%;
+  transform: translateX(-10%);
+  background-color: black;
+}
+
+.hover-target {
+  transform: scale(1.2);
+  filter: contrast(1.5);
+  box-shadow: 15px 19px 26px rgba(210, 248, 152, 0.43);
+}
+.hover-not-target {
+  transform: scale(0.75);
+  filter: blur(2px) opacity(0.5);
+}
+// ------------  END HOVER OF CARDS  ----------
+// ------------  START ACCORDION  ----------
+$accordion-icon-color: $primary-black;
+$accordion-icon-active-color: $primary-black;
+
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+
+$accordion-button-active-bg: $secondary;
+$accordion-button-active-color: $primary-black;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+// ------------  START ACCORDION  ----------
+
+$box-shadow: 0 0.5rem 0.5rem rgb(238 167 167 / 15%);
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@1,900&family=Nunito:ital,wght@0,500;0,800;0,900;1,500&display=swap");

@@ -1,0 +1,35 @@
+// BORDER OF OUR SERVICE SECTION (DESCRIPTION)
+@keyframes border-descript {
+  from {
+    display: 0;
+    width: 0;
+  }
+  to {
+    display: 1;
+    width: 100%;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(365deg);
+  }
+}
+@keyframes glass {
+  0% {
+    top: 0;
+    left: -40px;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 1px 0px 1px 2px #f3fff361;
+  }
+  100% {
+    left: 110%;
+    top: 0%;
+    opacity: 1;
+  }
+}

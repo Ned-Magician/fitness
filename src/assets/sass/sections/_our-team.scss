@@ -1,0 +1,85 @@
+@use "../custom" as *;
+@use "../componants/mixin" as *;
+@use "../componants/typography" as *;
+#meet-our-team {
+  @include flex;
+  @include bg-sections-style;
+  padding-bottom: 7rem;
+  .container-fluid {
+    h1 {
+      @extend .titles;
+      margin: 6rem;
+    }
+    .container {
+      height: 100%;
+      #cards-slider {
+        justify-content: space-around;
+        li {
+          cursor: pointer;
+          --bs-gutter-y: 3rem;
+          @include media-breakpoint-down(sm) {
+            transform: scale(0.75);
+            --bs-gutter-y: -8rem;
+          }
+          .card {
+            background-color: $primary-black;
+            box-shadow: 15px 14px 26px 0px rgb(204 212 192 / 33%);
+            .card-body {
+              padding-bottom: 1.5rem;
+              p {
+                color: $primary;
+                @extend .font-lg-smaller;
+                q {
+                  display: block;
+                  text-transform: none;
+                  font-size: 24px;
+                  font-family: "Nunito";
+                  font-style: italic;
+                  font-weight: 500;
+                  @include media-breakpoint-only(lg) {
+                    font-size: 18px;
+                  }
+                  @extend .font-lg-small;
+                  @include media-breakpoint-only(lg) {
+                    font-size: 18px;
+                  }
+                }
+                display: block;
+                font-family: monospace;
+              }
+            }
+          }
+        }
+      }
+      // CHECK BOXES SECTION
+      #checkBoxOurTeam {
+        @include flex;
+        margin-left: 5rem;
+        @include media-breakpoint-down(lg) {
+          margin-left: 0;
+          margin-bottom: 6rem;
+        }
+        span {
+          color: $primary;
+          @extend .font-lg-smaller;
+          white-space: nowrap;
+          margin-right: 1rem;
+          img {
+            margin-right: 1rem;
+            @include media-breakpoint-down(md) {
+              transform: scale(0.85);
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          border: 1px solid white;
+          width: 100%;
+          height: 100%;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+}

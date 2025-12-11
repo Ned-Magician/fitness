@@ -1,0 +1,71 @@
+@use "../custom" as *;
+@mixin flex($vertical: center, $Horizontal: center) {
+  display: flex;
+  justify-content: $vertical;
+  align-items: $Horizontal;
+}
+@mixin margin-padding($top, $right, $bottom, $left, $margin: true) {
+  @if ($margin) {
+    margin: $top $right $bottom $left;
+  } @else {
+    padding: $top $right $bottom $left;
+  }
+}
+@mixin gradient {
+  background: linear-gradient(
+    70.43deg,
+    #141313 39.63%,
+    rgba(20, 19, 19, 0) 57.81%
+  );
+  mix-blend-mode: multiply;
+}
+@mixin fontStyle-lg-titles {
+  font-family: "Nunito";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+@mixin fontStyle-md-titles {
+  font-family: "Nunito";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
+}
+@mixin centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin buttons {
+  color: $primary-black;
+  background-color: $secondary;
+  font-family: "Nunito";
+  font-style: normal;
+  cursor: pointer;
+}
+@mixin join-now-btn {
+  width: 450px;
+  height: 112px;
+  font-size: 36px;
+  line-height: 49px;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.5s ease-in-out, color 0.35s;
+}
+@mixin bg-sections-style {
+  background-color: $primary-black;
+  margin: 0 -0.75rem;
+  overflow: hidden;
+}
