@@ -9,6 +9,7 @@ const cssnano = require("cssnano");
 const terser = require("gulp-terser");
 const changed = require("gulp-changed");
 const imagemin = require("gulp-imagemin");
+const rename = require("gulp-rename");
 
 //------SASS Task--------
 function scssTask() {
@@ -19,7 +20,6 @@ function scssTask() {
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest("./dist/css", { sourcemaps: "." }));
 }
-const rename = require("gulp-rename");
 
 function htmlTask() {
   return src("src/fitness.html").pipe(rename("index.html")).pipe(dest("dist"));
@@ -28,39 +28,16 @@ function htmlTask() {
 function imgTask() {
   return src("src/assets/images/**/*").pipe(dest("dist/images"));
 }
+
 function jsTask() {
   return src("src/assets/js/**/*.js").pipe(terser()).pipe(dest("dist/js"));
 }
-
-//------JavaScript  Task--------
-// function jsTask() {
-//   return gulp
-//     .src("src/assets/js/*.js", { sourcemaps: true })
-//     .pipe(useref())
-//     .pipe(terser())
-//     .pipe(gulp.dest("dist/js", { sourcemaps: "." }));
-// }
-//------Minify Images Task--------
-// function imgTask() {
-//   const dist = "dist/images/*";
-//   return gulp
-//     .src("src/assets/images/**/*.+(png|jpg|gif|svg)")
-//     .pipe(changed(dist))
-//     .pipe(imagemin())
-//     .pipe(gulp.dest("dist/images"));
-// }
-//------copy fonts Task--------
-// function CopyTask() {
-//   return gulp
-//     .src("src/assets/fonts/**/*", { sourcemaps: true })
-//     .pipe(changed("dist/fonts/**/*"))
-//     .pipe(gulp.dest("dist/fonts", { sourcemaps: "." }));
-// }
 
 //------Watch Task--------
 function watchTask() {
   watch(["src/assets/sass/**/*.scss"], series(scssTask));
 }
+
 //------ Default Gulp Task--------
 exports.build = series(htmlTask, scssTask, jsTask, imgTask);
 exports.default = series(exports.build, watchTask);
